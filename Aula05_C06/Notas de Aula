@@ -1,0 +1,86 @@
+Orientação a objetos serve para organizar melhor os códigos
+
+funções passa a ser métodos
+métodos acessam dados que são específicos de objetos e não mais dados globais
+cada objeto tem seus métodos, um objeto não conversa com os metodos de outro objeto
+
+POO
+    Classes
+    polimorfismo
+    herança
+    Encapsulamento
+    Associações
+
+Classes/Abstrações
+   é importante dar um nome com sentido para a classe, que represente oq de fato ela faz
+   as variaveis que estão dentro de uma classe, são aquilo que ela sabe sobre ela mesma
+   ex:
+       public class Pessoa{
+               String nome;
+               int idade;
+               public vois falar(){
+                       System.out.println("Olá alunos")
+                }
+       }
+   ;
+
+Herança
+    A classe que filha herda tudo que a classe mãe tem
+        ex:
+        public class Professo extends Pessoa{
+            public void ministrarAula(){
+            }
+        }
+
+        não precisa declarar tudo de novo pois já herdou o nome e falar da classe mae
+
+Associação
+    public class Faculdade{
+        String nome;
+        Professor professor; //Associação
+        public void ministrarAulas(){
+            professor.ministrarAula(); //quem ministra a aula é o professor
+        }
+    }
+
+    professor virou um tipo e herdou tudo que vinha das classes anteriores
+
+Encapsulamento
+     public class Faculdade{
+            String nome;
+            private Professor professor; // privou o tipo
+            public void ministrarAulas(){
+                professor.ministrarAula(); //quem ministra a aula é o professor
+            }
+        }
+     ;
+
+Instancia
+    Criar um obejeto referente aquela classe
+    versão diferente de uma mesma coisa
+    ex:
+     especificação
+        numero:
+        cliente
+
+        instancia 1
+        numero: 10
+        cliente: Maria
+
+        instancia 2
+        numero: 20
+        cliente: Joao
+
+     criar uma nova instancia:
+        new conta;
+
+
+     c1 e c2(instancias) são ponteiros,
+     cada um tem um endereço de memoria, logo não da para comparar, nao da pra fazer c1 == c2
+     porém
+
+     quando logo apos de criar as intanscias fizer c1 = c2
+     elas apontam pro mesmo endereço de memória
+     quando faz isso elas ficam iguais, oq muda em muda, muda na outra
+
+UML

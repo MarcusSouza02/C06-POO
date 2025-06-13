@@ -14,7 +14,7 @@ public abstract class ConnectionDAO {
     ResultSet rs;
     String database = "Futebol";
     String user = "root";
-    String password = "99695169Mv$";
+    String password = "";
     String url;
 
     public ConnectionDAO() {
